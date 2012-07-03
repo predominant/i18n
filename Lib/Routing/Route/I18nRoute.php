@@ -80,7 +80,7 @@ class I18nRoute extends CakeRoute {
 		if(!$parentMatch) {
 			return false;
 		}
-		return preg_replace('#/' . DEFAULT_LANGUAGE . '/#', '/', $parentMatch);
+		return preg_replace('#^/' . DEFAULT_LANGUAGE . '/?#', '/', $parentMatch);
 	}
 
 /**
